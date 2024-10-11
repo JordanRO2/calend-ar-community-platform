@@ -1,0 +1,62 @@
+# Ignorar entornos virtuales
+venv/
+*.pyc
+__pycache__/
+
+# Ignorar archivos generados por Flask y MongoDB
+instance/
+*.log
+*.sqlite3
+
+# Ignorar carpetas de caché de Python
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.so
+
+# Ignorar archivos relacionados con Docker
+docker-compose.yml
+*.env
+Dockerfile
+
+# Ignorar archivos de dependencias
+Pipfile
+Pipfile.lock
+*.egg-info/
+*.egg
+build/
+dist/
+*.whl
+
+# Ignorar subidas temporales
+uploads/
+
+# Ignorar test files
+backend/tests/
+
+# Ignorar configuraciones locales y temporales
+.idea/
+.vscode/
+*.iml
+
+# Ignorar archivos de puntos de control
+*.swp
+*.swo
+
+# Ignorar binarios y librerías
+*.dll
+*.dylib
+*.exe
+*.o
+*.a
+*.so
+*.lib
+*.bin
+
+# Ignorar archivos de compilación
+*.out
+*.log
+
+# Ignorar archivos específicos de la plataforma
+*.DS_Store
+*.Thumbs.db
