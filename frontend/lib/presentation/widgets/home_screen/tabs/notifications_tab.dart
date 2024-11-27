@@ -115,7 +115,7 @@ class _NotificationsTabState extends State<NotificationsTab> {
           if (snapshot.connectionState == ConnectionState.waiting) {
             return const Center(child: CommonLoadingIndicator());
           } else if (snapshot.hasError) {
-            return Center(
+            return const Center(
               child: Text(AppTexts.errorLoadingNotifications),
             );
           }

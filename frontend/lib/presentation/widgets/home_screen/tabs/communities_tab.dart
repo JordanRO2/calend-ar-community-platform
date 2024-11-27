@@ -95,7 +95,7 @@ class _CommunitiesTabState extends State<CommunitiesTab> {
 }
 
 class _CommunitiesContent extends StatelessWidget {
-  const _CommunitiesContent({super.key});
+  const _CommunitiesContent();
 
   @override
   Widget build(BuildContext context) {
@@ -242,8 +242,8 @@ class _CommunitiesContent extends StatelessWidget {
 
         if (isLoading) {
           // Indicador de carga dentro de la sección de comunidades
-          return SliverToBoxAdapter(
-            child: const Center(child: CircularProgressIndicator()),
+          return const SliverToBoxAdapter(
+            child: Center(child: CircularProgressIndicator()),
           );
         } else if (message != null && messageType == MessageType.error) {
           return SliverToBoxAdapter(

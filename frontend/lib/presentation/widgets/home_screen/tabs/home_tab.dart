@@ -89,7 +89,7 @@ class _HomeTabState extends State<HomeTab> {
 
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
+        const SnackBar(
           content: Text(AppTexts.refreshSuccess),
           backgroundColor: Colors.green,
         ),
@@ -224,8 +224,8 @@ class _HomeContent extends StatelessWidget {
         builder: (context, constraints) {
           final isLargeScreen = constraints.maxWidth >= 800;
           final crossAxisCount = isLargeScreen ? 3 : 1;
-          final spacing = 16.0;
-          final totalHorizontalPadding = 32.0; // 16 left + 16 right
+          const spacing = 16.0;
+          const totalHorizontalPadding = 32.0; // 16 left + 16 right
           final cardWidth = isLargeScreen
               ? (constraints.maxWidth -
                       totalHorizontalPadding -
@@ -320,8 +320,8 @@ class _HomeContent extends StatelessWidget {
         builder: (context, constraints) {
           final isLargeScreen = constraints.maxWidth >= 800;
           final crossAxisCount = isLargeScreen ? 3 : 1;
-          final spacing = 16.0;
-          final totalHorizontalPadding = 32.0; // 16 left + 16 right
+          const spacing = 16.0;
+          const totalHorizontalPadding = 32.0; // 16 left + 16 right
           final cardWidth = isLargeScreen
               ? (constraints.maxWidth -
                       totalHorizontalPadding -

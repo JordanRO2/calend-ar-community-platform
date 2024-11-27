@@ -57,12 +57,12 @@ class SettingsContent extends StatelessWidget {
 
     // Definir el padding horizontal según el tamaño de la pantalla
     final horizontalPadding = isLargeScreen ? 32.0 : 16.0;
-    final maxContentWidth =
+    const maxContentWidth =
         800.0; // Ancho máximo para contenido en pantallas grandes
 
     return Center(
       child: ConstrainedBox(
-        constraints: BoxConstraints(
+        constraints: const BoxConstraints(
           maxWidth: maxContentWidth,
         ),
         child: SingleChildScrollView(
@@ -70,9 +70,9 @@ class SettingsContent extends StatelessWidget {
             horizontal: horizontalPadding,
             vertical: 16.0,
           ),
-          child: Column(
+          child: const Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: const [
+            children: [
               SettingsSection(
                 title: AppTexts.accountSettings,
                 children: [
