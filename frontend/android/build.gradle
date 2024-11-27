@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Update Android Gradle Plugin to 8.6.0
+        classpath 'com.android.tools.build:gradle:8.6.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+// Set the root project build directory
+rootProject.buildDir = "../build"
+
+subprojects {
+    // Organize subproject build directories
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+}
+
+// Task to clean the project
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

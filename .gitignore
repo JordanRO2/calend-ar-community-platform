@@ -60,3 +60,16 @@ backend/tests/
 # Ignorar archivos específicos de la plataforma
 *.DS_Store
 *.Thumbs.db
+
+# Flutter/Dart/Pub related files
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Flutter specific files
+.flutter/
+.flutter-plugins
